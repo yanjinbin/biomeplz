@@ -7,7 +7,6 @@
     "biome": "biome check --write src",
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
     "stylelint:style": "stylelint --config .stylelintrc.cjs \"src/**/*.+(css|scss)\"",
     "stylelint:style:fix": "stylelint --fix --config .stylelintrc.cjs \"src/**/*.+(css|scss)\""
