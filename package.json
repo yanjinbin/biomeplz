@@ -1,43 +1,41 @@
 {
-  "name": "biomeplz",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "biome": "biome check --write src",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "stylelint:style": "stylelint --config .stylelintrc.cjs \"src/**/*.+(css|scss)\"",
-    "stylelint:style:fix": "stylelint --fix --config .stylelintrc.cjs \"src/**/*.+(css|scss)\""
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@eslint/js": "^9.15.0",
-    "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.4",
-    "dayjs": "^1.11.13",
-    "eslint": "^9.15.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.14",
-    "globals": "^15.12.0",
-    "postcss": "^8.4.33",
-    "postcss-import": "^16.1.0",
-    "postcss-loader": "^6.2.1",
-    "postcss-nesting": "^12.0.3",
-    "postcss-preset-env": "^9.3.0",
-    "postcss-px-to-viewport": "^1.1.1",
-    "postcss-px-to-viewport-8-plugin": "^1.2.3",
-    "tailwindcss": "^3.4.15",
-    "vite": "^6.0.1",
-    "vite-plugin-mock": "^3.0.2",
-    "vite-plugin-svg-icons": "^2.0.1"
-  }
+	"name": "biomeplz",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"biome": "biome check --write src",
+		"dev": "vite .",
+		"build": "vite build .",
+		"preview": "vite preview ."
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@eslint/js": "^9.15.0",
+		"@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
+		"@types/react": "^18.3.12",
+		"@types/react-dom": "^18.3.1",
+		"@vitejs/plugin-react": "^4.3.4",
+		"dayjs": "^1.11.13",
+		"eslint": "^9.15.0",
+		"eslint-plugin-react": "^7.37.2",
+		"eslint-plugin-react-hooks": "^5.0.0",
+		"eslint-plugin-react-refresh": "^0.4.14",
+		"globals": "^15.12.0",
+		"postcss": "^8.4.33",
+		"postcss-import": "^16.1.0",
+		"postcss-loader": "^6.2.1",
+		"postcss-nesting": "^12.0.3",
+		"postcss-preset-env": "^9.3.0",
+		"postcss-px-to-viewport": "^1.1.1",
+		"postcss-px-to-viewport-8-plugin": "^1.2.3",
+		"tailwindcss": "^3.4.15",
+		"vite": "^6.0.1",
+		"vite-plugin-mock": "^3.0.2",
+		"vite-plugin-svg-icons": "^2.0.1"
+	}
 }
