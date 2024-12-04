@@ -10,7 +10,7 @@ PID = $(shell lsof -t -i :$(PORT))  # 获取占用指定端口的进程ID
 biome:
 	pnpm run biome
 
-run: stop
+run:
 	vite . --port $(PORT)
 
 stop:
