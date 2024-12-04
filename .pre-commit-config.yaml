@@ -1,17 +1,21 @@
 repos:
+
+  -   repo: https://github.com/biomejs/pre-commit
+      rev: ""  # Use the sha / tag you want to point at
+      hooks:
+        -   id: biome-check
+            additional_dependencies: ["@biomejs/biome@1.9.4"]
+
   -   repo: local
       hooks:
         - id: vite-build
           name: "Run Vite Build"
           entry: pnpm run build  # 或者直接 'vite build' 如果已经全局安装了 vite
           language: system     # 使用系统环境来执行命令
-          types: []            # 这里可以为空，表示对所有文件都有效
-#  -   repo: https://github.com/yanjinbin/pre-commit
-#      rev: "v0.5.0"  # Use the sha / tag you want to point at
-#      hooks:
-#        -   id: biome-check
-  -   repo: https://github.com/biomejs/pre-commit
-      rev: ""  # Use the sha / tag you want to point at
+          types: []  # 这里可以为空，表示对所有文件都有效
+
+  -   repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+      rev: v9.19.0
       hooks:
-        -   id: biome-check
-            additional_dependencies: ["@biomejs/biome@1.9.4"]
+        - id: commitlint
+          stages: [ commit-msg ]
