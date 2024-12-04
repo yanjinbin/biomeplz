@@ -7,6 +7,9 @@ PORT = 5173  # 要杀死进程的端口号
 PID = $(shell lsof -t -i :$(PORT))  # 获取占用指定端口的进程ID
 
 
+biome:
+	pnpm run biome
+
 run: stop
 	vite . --port $(PORT)
 
