@@ -1,35 +1,36 @@
-import reactLogo from "@/assets/react.svg";
-import { useState } from "react";
-import viteLogo from "/vite.svg";
 import "@/App.css";
+import Loading from "@/component/loading/index.jsx";
+import { generateRoutes } from "@/store/reducer/permitSlice.jsx";
+import { getUserInfoAsync } from "@/store/reducer/userSlice.js";
+import { getAK } from "@/util/auth.js";
+import { Suspense, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useLocation, useNavigate, useRoutes } from "react-router-dom";
 
-function App() {
-	const [count, setCount] = useState(0);
+const App = () => {
+	const dispatch = useDispatch();
+	const routes = useSelector((state) => state.permit.routes);
+	const navigate = useNavigate();
+	const location = useLocation();
+	useEffect(() => {
+		const fetchData = async () => {
+			if (getAK()) {
+				const useInfo = await dispatch(getUserInfoAsync());
+				dispatch(generateRoutes(useInfo.menus));
+				return;
+			}
+			navigate("/login", { replace: true, state: { preLocation: location } });
+			return;
+		};
+		fetchData();
+	}, [dispatch, navigate, location]);
 
+	const elements = useRoutes(routes);
 	return (
 		<>
-			<div>
-				<a href="https://vite.dev" target="_blank" rel="noreferrer">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://react.dev" target="_blank" rel="noreferrer">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-			</div>
-			<h1>Vite + React</h1>
-			<div className="card">
-				<button type={"button"} onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.jsx</code> and save to test HMR
-				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
-			</p>
+			<Suspense fallback={<Loading />}>{routes && elements}</Suspense>
 		</>
 	);
-}
+};
 
 export default App;

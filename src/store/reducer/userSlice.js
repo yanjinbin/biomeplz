@@ -2,7 +2,7 @@ import userApi from "@/api/user/index.js";
 import { getAK, getRK, removeAK, removeRK, setAK, setRK } from "@/util/auth.js";
 import { createSlice } from "@reduxjs/toolkit";
 // 导入加载用户路由的方法
-import { generateRoutes } from "./permitSlice.js";
+import { generateRoutes } from "./permitSlice.jsx";
 
 /**
  * 创建一个用户状态切片
@@ -62,7 +62,7 @@ export const loginAsync = (payload) => async (dispatch) => {
 
 // 异步获取用户信息
 export const getUserInfoAsync = () => async (dispatch) => {
-	const { data } = await userApi.center.get();
+	const { data } = await userApi.center.getUserinfo();
 	dispatch(
 		setUserinfo({
 			...data,

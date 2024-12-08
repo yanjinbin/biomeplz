@@ -1,4 +1,4 @@
-import constantRoutes from "@/router/router.js";
+import constantRoutes from "@/router/router.jsx";
 import { createSlice } from "@reduxjs/toolkit";
 import { Navigate } from "react-router-dom";
 

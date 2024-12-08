@@ -1,7 +1,7 @@
+import Layout from "@/layout/component/layout.jsx";
 import NotFound from "@/page/404/index.jsx";
 import Home from "@/page/home/index.jsx";
 import Login from "@/page/login/index.jsx";
-// 默认url路由列表
 import { Navigate } from "react-router-dom";
 
 const constantRoutes = [

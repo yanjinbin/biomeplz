@@ -1,4 +1,4 @@
-import permitSlice from "@/store/reducer/permitSlice.js";
+import permitSlice from "@/store/reducer/permitSlice.jsx";
 import tabSlice from "@/store/reducer/tabSlice.js";
 import userSlice from "@/store/reducer/userSlice.js";
 import { configureStore, createStore } from "@reduxjs/toolkit";
