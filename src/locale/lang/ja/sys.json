@@ -1,0 +1,147 @@
+{
+	"sys": {
+		"api": {
+			"operationSuccess": "操作成功",
+			"operationFailed": "操作失敗",
+			"errorTip": "エラーヒント",
+			"successTip": "成功ヒント",
+			"errorMessage": "操作が失敗しました。システム異常です！",
+			"timeoutMessage": "ログインがタイムアウトしました。再度ログインしてください！",
+			"apiTimeoutMessage": "インターフェースリクエストがタイムアウトしました。ページを更新して再試行してください！",
+			"apiRequestFailed": "インターフェースリクエストが失敗しました。後でもう一度お試しください！",
+			"networkException": "ネットワーク異常",
+			"networkExceptionMsg": "ネットワーク接続が正常かどうか確認してください！ネットワークが異常です",
+
+			"errMsg401": "ユーザーに権限がありません（トークン、ユーザー名、パスワードエラー）！",
+			"errMsg403": "ユーザーは認証されていますが、アクセスは禁止されています！",
+			"errMsg404": "ネットワークリクエストエラー、リソースが見つかりません！",
+			"errMsg405": "ネットワークリクエストエラー、リクエストメソッドが許可されていません！",
+			"errMsg408": "ネットワークリクエストがタイムアウトしました！",
+			"errMsg500": "サーバーエラーです。管理者に連絡してください！",
+			"errMsg501": "ネットワークが実装されていません！",
+			"errMsg502": "ネットワークエラー！",
+			"errMsg503": "サービスが利用できません。サーバーが一時的に過負荷またはメンテナンス中です！",
+			"errMsg504": "ネットワークタイムアウト！",
+			"errMsg505": "HTTPバージョンがリクエストをサポートしていません！"
+		},
+		"login": {
+			"backSignIn": "サインインに戻る",
+			"mobileSignInFormTitle": "モバイルサインイン",
+			"qrSignInFormTitle": "QRコードサインイン",
+			"signInFormTitle": "サインイン",
+			"signUpFormTitle": "サインアップ",
+			"forgetFormTitle": "パスワードをリセット",
+
+			"signInPrimaryTitle": "こんにちは、ようこそ",
+			"signInSecondTitle": "バックエンド管理システム",
+			"signInTitle": "",
+			"signInDesc": "個人情報を入力して始めましょう！",
+			"policy": "私は xxx プライバシーポリシーに同意します",
+			"scanSign": "コードをスキャンしてログインを完了",
+			"forgetFormSecondTitle": "アカウントに関連付けられたメールアドレスを入力してください。パスワードをリセットするリンクをメールでお送りします。",
+
+			"loginButton": "サインイン",
+			"registerButton": "サインアップ",
+			"rememberMe": "ログイン状態を保持する",
+			"forgetPassword": "パスワードを忘れましたか？",
+			"otherSignIn": "以下でサインイン",
+			"sendSmsButton": "SMSコードを送信",
+			"sendSmsText": "{{second}}秒後に再取得",
+			"sendEmailButton": "メールを送信",
+
+			"loginSuccessTitle": "ログイン成功",
+			"loginSuccessDesc": "おかえりなさい",
+
+			"accountPlaceholder": "ユーザー名を入力してください",
+			"passwordPlaceholder": "パスワードを入力してください",
+			"confirmPasswordPlaceholder": "パスワードを確認してください",
+			"emaildPlaceholder": "メールを入力してください",
+			"smsPlaceholder": "SMSコードを入力してください",
+			"mobilePlaceholder": "携帯番号を入力してください",
+			"policyPlaceholder": "チェック後に登録",
+			"diffPwd": "2つのパスワードが一致しません",
+
+			"userName": "ユーザー名",
+			"password": "パスワード",
+			"confirmPassword": "パスワードを確認",
+			"email": "メール",
+			"smsCode": "SMSコード",
+			"mobile": "携帯番号",
+
+			"registerAndAgree": "サインアップすることで、私は同意します",
+			"termsOfService": " 利用規約 ",
+			"privacyPolicy": " プライバシーポリシー ",
+			"logout": "ログアウト"
+		},
+		"tab": {
+			"fullscreen": "フルスクリーン",
+			"refresh": "リフレッシュ",
+			"close": "閉じる",
+			"closeOthers": "その他を閉じる",
+			"closeAll": "すべて閉じる",
+			"closeLeft": "左を閉じる",
+			"closeRight": "右を閉じる"
+		},
+		"menu": {
+			"dashboard": "ダッシュボード",
+			"workbench": "ワークベンチ",
+			"analysis": "分析",
+			"management": "管理",
+			"user": {
+				"index": "ユーザー",
+				"profile": "プロフィール",
+				"account": "アカウント"
+			},
+			"system": {
+				"index": "システム",
+				"organization": "組織",
+				"permission": "権限",
+				"role": "役割",
+				"user": "ユーザー",
+				"user_detail": "ユーザー詳細"
+			},
+			"blog": "ブログ",
+			"components": "コンポーネント",
+			"icon": "アイコン",
+			"animate": "アニメーション",
+			"scroll": "スクロール",
+			"markdown": "マークダウン",
+			"editor": "エディター",
+			"i18n": "多言語",
+			"upload": "アップロード",
+			"chart": "チャート",
+			"toast": "トースト",
+			"functions": "機能",
+			"clipboard": "クリップボード",
+			"token_expired": "トークン期限切れ",
+			"menulevel": {
+				"index": "メニューレベル",
+				"1a": "メニューレベル1a",
+				"1b": {
+					"index": "メニューレベル1b",
+					"2a": "メニューレベル2a",
+					"2b": {
+						"index": "メニューレベル2b",
+						"3a": "メニューレベル3a",
+						"3b": "メニューレベル3b"
+					}
+				}
+			},
+			"disabled": "アイテム無効",
+			"label": "アイテムラベル",
+			"frame": "アイテム外部",
+			"external_link": "外部リンク",
+			"iframe": "アイフレーム",
+			"blank": "ブランク",
+			"calendar": "カレンダー",
+			"kanban": "カンバン",
+			"error": {
+				"index": "エラーページ",
+				"403": "403",
+				"404": "404",
+				"500": "500"
+			}
+		},
+		"docs": "ドキュメント"
+	}
+}

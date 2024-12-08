@@ -2,9 +2,11 @@ import Layout from "@/layout/component/layout.jsx";
 import NotFound from "@/page/404/index.jsx";
 import Home from "@/page/home/index.jsx";
 import Login from "@/page/login/index.jsx";
+import Test from "@/page/test/index.jsx";
 import { Navigate } from "react-router-dom";
 
 const constantRoutes = [
+	{ path: "test", title: "测试页面", element: <Test /> },
 	{ path: "login", title: "登录", element: <Login /> },
 	{
 		path: "/",

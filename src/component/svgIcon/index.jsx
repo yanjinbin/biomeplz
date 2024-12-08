@@ -3,7 +3,7 @@ import React from "react";
 const SvgIcon = React.memo(({ width, height, name, color, className }) => {
 	return (
 		<svg
-			className={className.trim() || "svg-icon"}
+			className={className || "svg-icon"}
 			aria-hidden="true"
 			width={width}
 			height={height}

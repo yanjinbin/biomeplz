@@ -11,17 +11,13 @@ const versionName = process.env.VERSION_NAME || version;
 export default defineConfig({
 	plugins: [
 		react(),
+		createSvgIconsPlugin({
+			iconDirs: [resolve(process.cwd(), "src/assets/icons")],
+			symbolId: "icon-[dir]-[name]",
+		}),
 		viteMockServe({
 			// 是 项目根目录 不是src
 			mockPath: "mock",
-		}),
-
-		// 注册所有的svg文件生成svg雪碧图
-		createSvgIconsPlugin({
-			iconDirs: [resolve(process.cwd(), "src/assets/Icon/svg")], // icon存放的目录
-			symbolId: "[name]",
-			inject: "body-last", // 插入的位置
-			customDomId: "__svg__icons__dom__", // svg的id
 		}),
 	],
 	envDir: "env",
